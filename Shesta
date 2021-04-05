@@ -1,0 +1,37 @@
+using System;
+
+namespace ShestaZadachka
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.Write("Input the number of numbers: ");
+            int n = int.Parse(Console.ReadLine());
+            int i = 0;
+            int num = 0;
+            int low = int.MaxValue;
+            int high = int.MinValue;
+
+
+            while (i < n)
+            {
+                Console.Write("Input a number: ");
+                num = int.Parse(Console.ReadLine());
+                if (num < low)
+                {
+                    low = num;
+                }
+
+                if (num > high)
+                {
+                    high = num;
+                }
+                i++;
+            }
+
+            Console.WriteLine("The lowest number is: {0} \nThe highest number is: {1}", low, high);
+            Console.ReadLine();
+        }
+    }
+}
