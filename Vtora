@@ -21,6 +21,40 @@ namespace VtoraZadachka
                 }
 
             } while (i < n);
+using System;
+
+namespace VtoraZadachka
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int sum = 0;
+            int i = 0;
+            int n = 0;
+
+            do
+            {
+                Console.Write("Insert number >= 0: ");
+                n = int.Parse(Console.ReadLine());
+            } while (n <= 0);
+
+            do
+            {
+                i++;
+                if (i % 2 == 0)
+                {
+                    sum = sum + i;
+                }
+
+            } while (i < n);
+
+
+            Console.WriteLine("The sum is: {0}", sum);
+            Console.ReadKey();
+        }
+    }
+}
 
 
             Console.WriteLine("The sum is: {0}", sum);
