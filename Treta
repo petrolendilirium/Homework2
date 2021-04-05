@@ -9,14 +9,14 @@ namespace TretaZadachka
             int sum = 0;
             int i = 0;
 
-            Console.WriteLine("Input a number: ");
+            Console.Write("Input a number: ");
             int n = int.Parse(Console.ReadLine());
 
             while (n > 0)
             {
                 sum = sum + n;
                 i++;
-                Console.WriteLine("Input a number: ");
+                Console.Write("Input a number: ");
                 n = int.Parse(Console.ReadLine());
             }
 
