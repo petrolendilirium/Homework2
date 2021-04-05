@@ -14,7 +14,43 @@ namespace PetaZadachka
 
             while (num < n)
             {
+                num++;using System;
+
+namespace PetaZadachka
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int n = 0;
+            int a = 0;
+            int num = 0;
+
+            while (n <= 0)
+            {
+                Console.Write("Input the first number: ");
+                n = int.Parse(Console.ReadLine());
+            }
+            while (a <= 0 || a >= n)
+            {
+                Console.Write("Input the second number: ");
+                a = int.Parse(Console.ReadLine());
+            }
+
+            while (num < n)
+            {
                 num++;
+                if (a % num == 0)
+                {
+                    Console.WriteLine(num);
+                }
+            }
+
+            Console.ReadLine();
+        }
+    }
+}
+
                 if (a % num == 0)
                 {
                     Console.WriteLine(num);
