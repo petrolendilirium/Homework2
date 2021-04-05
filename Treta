@@ -21,6 +21,7 @@ namespace TretaZadachka
             }
 
             Console.WriteLine("The sum is: {0} \nThe number of inputed numbers is: {1}", sum, i);
+            Console.ReadLine();
         }
     }
 }
