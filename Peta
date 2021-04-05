@@ -1,0 +1,27 @@
+using System;
+
+namespace PetaZadachka
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.Write("Input the first number: ");
+            int n = int.Parse(Console.ReadLine());
+            Console.Write("Input the second number: ");
+            int a = int.Parse(Console.ReadLine());
+            int num = 0;
+
+            while (num < n)
+            {
+                num++;
+                if (a % num == 0)
+                {
+                    Console.WriteLine(num);
+                }
+            }
+            
+            Console.ReadLine();
+        }
+    }
+}
