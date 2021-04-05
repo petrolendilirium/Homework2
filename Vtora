@@ -24,7 +24,7 @@ namespace VtoraZadachka
 
 
             Console.WriteLine("The sum is: {0}", sum);
-            Console.ReadKey();
+            Console.ReadLine();
         }
     }
 }
