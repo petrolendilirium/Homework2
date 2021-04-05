@@ -22,6 +22,47 @@ namespace ShestaZadachka
                 {
                     low = num;
                 }
+using System;
+
+namespace ShestaZadachka
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int n = 0;
+            while (n <= 0)
+            {
+                Console.Write("Input the number of numbers: ");
+                n = int.Parse(Console.ReadLine());
+            }
+            int i = 0;
+            int num = 0;
+            int low = int.MaxValue;
+            int high = int.MinValue;
+
+
+            while (i < n)
+            {
+                Console.Write("Input a number: ");
+                num = int.Parse(Console.ReadLine());
+                if (num < low)
+                {
+                    low = num;
+                }
+
+                if (num > high)
+                {
+                    high = num;
+                }
+                i++;
+            }
+
+            Console.WriteLine("The lowest number is: {0} \nThe highest number is: {1}", low, high);
+            Console.ReadLine();
+        }
+    }
+}
 
                 if (num > high)
                 {
