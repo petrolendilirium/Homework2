@@ -1,0 +1,30 @@
+using System;
+
+namespace VtoraZadachka
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int sum = 0;
+            int i = 0;
+
+            Console.Write("Insert number >= 0: ");
+            int n = int.Parse(Console.ReadLine());
+
+            do
+            {
+                i++;
+                if (i % 2 == 0)
+                {
+                    sum = sum + i;
+                }
+
+            } while (i < n);
+
+
+            Console.WriteLine("The sum is: {0}", sum);
+            Console.ReadKey();
+        }
+    }
+}
