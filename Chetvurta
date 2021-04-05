@@ -1,0 +1,30 @@
+using System;
+
+namespace ChetvurtaZadachka
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int n = 0;
+            int even = 0;
+            int i = 0;
+            int sum = 0;
+
+            while (even < 10)
+            {
+                Console.Write("Input a number: ");
+                n = int.Parse(Console.ReadLine());                
+                if (n % 2 == 0)
+                {
+                    even++;
+                    sum = sum + n;
+                }
+                i++;
+            }
+
+            Console.WriteLine("The numbers are: {0} \nThe average of the even numbers is: {1}", i, sum/2);
+            Console.ReadLine();
+        }
+    }
+}
